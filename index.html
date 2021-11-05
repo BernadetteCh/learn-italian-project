@@ -7,6 +7,74 @@
     <title>Learn Italian-App</title>
 </head>
 <body>
-    
+    <div class="grid">
+      <div class="container">
+        <header>
+          <img
+            src="https://image.shutterstock.com/image-vector/colosseum-wonder-world-vector-doodle-260nw-1598621653.jpg"
+            alt="colloseum"
+            class="colloseum"
+          />
+          <!----<h1><span class="highlight">V</span><span class="highlight_two">i</span><span class="highlight_three">v</span><span class="highlight">a</span><span class="highlight_two"> l'</span><span class="highlight_three">I</span><span class="highlight">t</span><span class="highlight_two">a</span><span class="highlight_three">l</span><span class="highlight">i</span><span class="highlight_two">a</span></h1>---->
+          <h1>
+            <span class="highlight">Viva</span
+            ><span class="highlight_two">l'</span
+            ><span class="highlight_three">Italia</span>
+            <img
+              src="https://us.123rf.com/450wm/pandavector/pandavector1611/pandavector161101914/69073332-turm-von-pisa-in-italien-symbol-im-cartoon-stil-auf-wei%C3%9Fem-hintergrund-italien-land-symbol-vektor-ill.jpg?ver=6"
+              alt="pisa"
+              class="pisa"
+            />
+          </h1>
+          <h2>Learn Italian! Language courses available now</h2>
+          <hr />
+        </header>
+        <main>
+          <img
+            src="https://www.researchgate.net/profile/Giacomo-Oggiano/publication/281774167/figure/fig1/AS:284548748333061@1444853117309/Location-map-of-the-Island-of-Sardinia-Italy.png"
+            alt="Italian_map"
+          />
+          <p>
+            <strong>I</strong>talian is a Romance language of the Indo-European
+            language family.<br />
+            Italian is the closest national language to Latin, from which it
+            descends via vulgar Latin of the Roman Empire. It is the second most
+            widely spoken native language in the European Union with 67 million
+            speakers (15% of the EU population) and it is spoken as a second
+            language by 13.4 million EU citizens. Learn more about the italian
+            language click
+            <a
+              href="https://en.wikipedia.org/wiki/Italian_language"
+              target="_blank"
+              ><em><span class="highlight">here</span></em></a
+            >
+          </p>
+          <button class="register">Get In Touch</button>
+        </main>
+      </div>
+    </div>
+    <footer>This page was coded by <strong>Bernadette</strong></footer>
+    <script>
+      function italian() {
+        let name = prompt("What is your name ?");
+        let language = prompt("Do you speak italian ? Please answer yes or no");
+        let email = prompt("What is your email adress ?");
+        language = language.toLowerCase();
+        language = language.trim();
+        language = language.replace("yez", "yes");
+
+        let h2 = document.querySelector("h2");
+        h2.innerHTML =
+          " <em>Thank you, </em>" + name + "! We'll be in touch soon";
+
+        if (language === "yes") {
+          alert("Great ! 👋👋👋");
+        } else {
+          alert("Start your learning with us 🤓");
+        }
+      }
+      let registerButton = document.querySelector("button");
+      registerButton.addEventListener("click", italian);
+    </script>
 </body>
 </html>
