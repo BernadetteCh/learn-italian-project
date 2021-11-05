@@ -5,6 +5,186 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Italian-App</title>
+    <style>
+      html {
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        background: linear-gradient(
+          90deg,
+          #009246 31.2%,
+          white 33.3%,
+          white 66.7%,
+          red 68.8%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        letter-spacing: 2.5px;
+        font-size: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 60px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      img {
+        width: 200px;
+        height: 300px;
+        float: left;
+        margin-right: 50px;
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #f1ded4;
+      }
+
+      p {
+        line-height: 1.5;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 18px 35px;
+        border-radius: 5px;
+        transition: opacity 150ms ease-in-out;
+        opacity: 0.9;
+        background-color: #f5d7a3;
+        /*border-color:#f3c68e;*/
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        /*color: #a8763d;*/
+        color: #b3752f;
+        box-shadow: 0px 1px 20px rgb(124, 124, 126/ 50%);
+        font-size: 20px;
+      }
+      hr {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        background-color: #dfbfaf;
+        border: 0;
+        height: 1.5px;
+        border-style: inset;
+      }
+
+      a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #b3752f;
+      }
+
+      .container {
+        border: none;
+        max-width: 650px;
+        height: 750px;
+        padding: 15px 40px;
+        margin: 0 auto;
+        margin-top: 80px;
+        text-align: justify;
+        border-radius: 30px;
+        background-color: #fde9df;
+      }
+
+      .highlight {
+        color: #009246;
+      }
+
+      .highlight_two {
+        color: white;
+      }
+      .highlight_three {
+        color: #dd0f17;
+      }
+      .colloseum {
+        width: 60px;
+        height: 60px;
+        margin-left: 0px;
+        padding: 0px;
+        transform: rotate(-15deg);
+        float: left;
+        margin-right: 0px;
+      }
+
+      .pisa {
+        width: 60px;
+        height: 60px;
+        padding: 0px;
+        transform: rotate(15deg);
+        float: right;
+        margin-right: 0px;
+      }
+
+      button:hover {
+        background-color: #ffedd7;
+        border: none;
+        cursor: pointer;
+        color: #b3752f;
+      }
+
+      p::first-letter {
+        font-size: x-large;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .container {
+          height: auto;
+        }
+        img {
+          display: block;
+          margin: 0 auto;
+          float: none;
+          max-width: 100%;
+        }
+        h2 {
+          font-size: 1.3em;
+        }
+        h1 {
+          font-size: 1.5em;
+        }
+        footer {
+          font-size: 0.6em;
+        }
+        .pisa {
+          width: 1.3em;
+          height: 1.3em;
+        }
+        .colloseum {
+          width: 1.8em;
+          height: 1.8em;
+        }
+      }
+
+      @media screen and (min-width: 481px) and (max-width: 625px) {
+        .container {
+          height: auto;
+        }
+        footer {
+          font-size: 0.7em;
+        }
+      }
+    </style>
 </head>
 <body>
     <div class="grid">
